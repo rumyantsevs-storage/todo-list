@@ -123,4 +123,11 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+    
+    public function actionHello()
+    {
+        $var = 'My page';
+        
+        return $this->render('hello', ['varInView' => $var]);
+    }
 }
