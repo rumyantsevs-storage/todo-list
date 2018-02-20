@@ -9,6 +9,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\UserForm;
 
 class SiteController extends Controller
 {
@@ -124,10 +125,17 @@ class SiteController extends Controller
         return $this->render('about');
     }
     
-    public function actionHello()
+    public function actionUser()
     {
-        $var = 'My page';
+        $model = new UserForm;
         
-        return $this->render('hello', ['varInView' => $var]);
+        if ($model->load(Yii::$app->request->post()) && $model->validate())
+        {
+            Yii::$app->session->setFlash('success', 'You have entered the data correctly/');
+        } else {
+            return $this->render('userForm', ['model' => $model]);
+        }
+        
+        return $this->render('userForm', ['model' => $model]);
     }
 }

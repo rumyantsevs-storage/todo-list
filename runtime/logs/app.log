@@ -1,0 +1,2681 @@
+2018-02-20 04:28:13 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'yii\web\Request::cookieValidationKey must be configured with a secret key.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Request.php:1530
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Request.php(1512): yii\web\Request->loadCookies()
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\User.php(559): yii\web\Request->getCookies()
+#2 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\User.php(287): yii\web\User->getIdentityAndDurationFromCookie()
+#3 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\User.php(680): yii\web\User->loginByCookie()
+#4 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\User.php(188): yii\web\User->renewAuthStatus()
+#5 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\User.php(333): yii\web\User->getIdentity()
+#6 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Component.php(133): yii\web\User->getIsGuest()
+#7 C:\web-devs\todo-list\vendor\yiisoft\yii2-debug\panels\UserPanel.php(75): yii\base\Component->__get('isGuest')
+#8 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\debug\panels\UserPanel->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 C:\web-devs\todo-list\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#11 C:\web-devs\todo-list\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#12 C:\web-devs\todo-list\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#13 C:\web-devs\todo-list\vendor\yiisoft\yii2-debug\Module.php(177): yii\BaseYii::createObject(Array)
+#14 C:\web-devs\todo-list\vendor\yiisoft\yii2-debug\Module.php(149): yii\debug\Module->initPanels()
+#15 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\debug\Module->init()
+#16 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#17 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#18 C:\web-devs\todo-list\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#19 C:\web-devs\todo-list\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#20 C:\web-devs\todo-list\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#21 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#22 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#23 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#24 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#25 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\base\Application->init()
+#26 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#27 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->__construct(Array)
+#28 {main}
+2018-02-20 04:28:13 [::1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8000'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '50217'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519100893.846
+    'REQUEST_TIME' => 1519100893
+]
+2018-02-20 06:53:47 [::1][-][r91ut7kck25lgqnktuuo67a6r4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/say' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('say', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/say', Array)
+#2 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 06:53:47 [::1][-][r91ut7kck25lgqnktuuo67a6r4][info][application] $_GET = [
+    'r' => 'site/say'
+]
+
+$_COOKIE = [
+    '_csrf' => '148530d9ee61e46f6992d5312c3fad529c418a352c259062ad87ccb989754dc2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3eRQBWE6Zi4Oy0g2jQbex1m-Tevmvm53\";}'
+    'PHPSESSID' => 'r91ut7kck25lgqnktuuo67a6r4'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => '_csrf=148530d9ee61e46f6992d5312c3fad529c418a352c259062ad87ccb989754dc2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223eRQBWE6Zi4Oy0g2jQbex1m-Tevmvm53%22%3B%7D; PHPSESSID=r91ut7kck25lgqnktuuo67a6r4'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8000'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '50742'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsay'
+    'REQUEST_URI' => '/index.php?r=site%2Fsay'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519109627.41
+    'REQUEST_TIME' => 1519109627
+]
+2018-02-20 07:04:25 [::1][-][r91ut7kck25lgqnktuuo67a6r4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "hello".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('hello', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 07:04:25 [::1][-][r91ut7kck25lgqnktuuo67a6r4][info][application] $_GET = [
+    'r' => 'hello'
+]
+
+$_COOKIE = [
+    '_csrf' => '148530d9ee61e46f6992d5312c3fad529c418a352c259062ad87ccb989754dc2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3eRQBWE6Zi4Oy0g2jQbex1m-Tevmvm53\";}'
+    'PHPSESSID' => 'r91ut7kck25lgqnktuuo67a6r4'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => '_csrf=148530d9ee61e46f6992d5312c3fad529c418a352c259062ad87ccb989754dc2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223eRQBWE6Zi4Oy0g2jQbex1m-Tevmvm53%22%3B%7D; PHPSESSID=r91ut7kck25lgqnktuuo67a6r4'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8000'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '50770'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=hello'
+    'REQUEST_URI' => '/index.php?r=hello'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519110265.179
+    'REQUEST_TIME' => 1519110265
+]
+2018-02-20 09:32:20 [::1][-][r91ut7kck25lgqnktuuo67a6r4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "app".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('app', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 09:32:20 [::1][-][r91ut7kck25lgqnktuuo67a6r4][info][application] $_COOKIE = [
+    '_csrf' => '148530d9ee61e46f6992d5312c3fad529c418a352c259062ad87ccb989754dc2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3eRQBWE6Zi4Oy0g2jQbex1m-Tevmvm53\";}'
+    'PHPSESSID' => 'r91ut7kck25lgqnktuuo67a6r4'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => '_csrf=148530d9ee61e46f6992d5312c3fad529c418a352c259062ad87ccb989754dc2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223eRQBWE6Zi4Oy0g2jQbex1m-Tevmvm53%22%3B%7D; PHPSESSID=r91ut7kck25lgqnktuuo67a6r4'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8000'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '51545'
+    'REDIRECT_URL' => '/app'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/app'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519119140.726
+    'REQUEST_TIME' => 1519119140
+]
+2018-02-20 11:53:00 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/gii' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('gii', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/gii', Array)
+#2 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 11:53:00 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '52576'
+    'REDIRECT_URL' => '/site/gii'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/gii'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519127580.635
+    'REQUEST_TIME' => 1519127580
+]
+2018-02-20 16:49:25 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method Yii::app()' in C:\web-devs\todo-list\views\site\index.php:1
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-02-20 16:49:25 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://app/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '52977'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519145365.639
+    'REQUEST_TIME' => 1519145365
+]
+2018-02-20 16:51:30 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\web\View::pageTitle' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Component.php:203
+Stack trace:
+#0 C:\web-devs\todo-list\views\site\index.php(1): yii\base\Component->__set('pageTitle', 'My Application')
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\View.php(332): require('C:\\web-devs\\tod...')
+#2 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\web-devs\\tod...', Array)
+#3 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\web-devs\\tod...', Array, Object(app\controllers\SiteController))
+#4 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#5 C:\web-devs\todo-list\controllers\SiteController.php(66): yii\base\Controller->render('index')
+#6 [internal function]: app\controllers\SiteController->actionIndex()
+#7 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#10 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#11 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2018-02-20 16:51:30 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://app/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '52992'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519145490.256
+    'REQUEST_TIME' => 1519145490
+]
+2018-02-20 17:31:11 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\Users' not found' in C:\web-devs\todo-list\models\Posts.php:37
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-02-20 17:31:11 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_GET = [
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'IlGb4llWPpDFZ4r8GEPfCuVZmuKsqH3fsJWSUUsY3I8PZdypPh934L8955lzOu1cgQnMl_vcKpPl4P4OFF-Txw=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\Posts'
+        'searchModelClass' => 'app\\models\\PostsSearch'
+        'controllerClass' => 'app\\controllers\\PostsController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '522'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://app'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://app/gii/crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53423'
+    'REDIRECT_URL' => '/gii/crud'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii/crud'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519147871.097
+    'REQUEST_TIME' => 1519147871
+]
+2018-02-20 18:14:23 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "сщтыщду".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('\xD1\x81\xD1\x89\xD1\x82\xD1\x8B\xD1\x89\xD0\xB4\xD1\x83', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 18:14:23 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53722'
+    'REDIRECT_URL' => '/сщтыщду'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/%D1%81%D1%89%D1%82%D1%8B%D1%89%D0%B4%D1%83'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519150463.942
+    'REQUEST_TIME' => 1519150463
+]
+2018-02-20 18:14:29 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "console".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('console', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 18:14:29 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53722'
+    'REDIRECT_URL' => '/console'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/console'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519150469.502
+    'REQUEST_TIME' => 1519150469
+]
+2018-02-20 18:14:35 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/console' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('console', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/console', Array)
+#2 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 18:14:35 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53723'
+    'REDIRECT_URL' => '/site/console'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/console'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519150475.182
+    'REQUEST_TIME' => 1519150475
+]
+2018-02-20 18:14:46 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "post".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('post', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 18:14:46 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53724'
+    'REDIRECT_URL' => '/post'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/post'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519150486.113
+    'REQUEST_TIME' => 1519150486
+]
+2018-02-20 18:51:47 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 18:51:47 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53872'
+    'REDIRECT_URL' => '/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519152707.585
+    'REQUEST_TIME' => 1519152707
+]
+2018-02-20 19:00:43 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "userForm".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('userForm', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:00:43 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53895'
+    'REDIRECT_URL' => '/userForm'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/userForm'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519153243.364
+    'REQUEST_TIME' => 1519153243
+]
+2018-02-20 19:00:48 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/userForm' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('userForm', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/userForm', Array)
+#2 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:00:47 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53895'
+    'REDIRECT_URL' => '/site/userForm'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/userForm'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519153247.972
+    'REQUEST_TIME' => 1519153247
+]
+2018-02-20 19:00:53 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/userForm.php' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('userForm.php', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/userForm.p...', Array)
+#2 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:00:53 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53895'
+    'REDIRECT_URL' => '/site/userForm.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/userForm.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519153253.229
+    'REQUEST_TIME' => 1519153253
+]
+2018-02-20 19:01:11 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "views/site/userForm.php".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('views/site/user...', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:01:11 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53896'
+    'REDIRECT_URL' => '/views/site/userForm.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/views/site/userForm.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519153271.384
+    'REQUEST_TIME' => 1519153271
+]
+2018-02-20 19:01:14 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "views/userForm.php".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('views/userForm....', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:01:14 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53896'
+    'REDIRECT_URL' => '/views/userForm.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/views/userForm.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519153274.743
+    'REQUEST_TIME' => 1519153274
+]
+2018-02-20 19:01:18 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "userForm.php".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('userForm.php', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:01:17 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53896'
+    'REDIRECT_URL' => '/userForm.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/userForm.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519153277.972
+    'REQUEST_TIME' => 1519153277
+]
+2018-02-20 19:01:19 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "userForm".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('userForm', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:01:19 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53896'
+    'REDIRECT_URL' => '/userForm'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/userForm'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519153279.817
+    'REQUEST_TIME' => 1519153279
+]
+2018-02-20 19:01:21 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:01:21 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53896'
+    'REDIRECT_URL' => '/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519153281.657
+    'REQUEST_TIME' => 1519153281
+]
+2018-02-20 19:02:11 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:02:11 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53899'
+    'REDIRECT_URL' => '/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519153331.697
+    'REQUEST_TIME' => 1519153331
+]
+2018-02-20 19:07:29 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:07:29 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53908'
+    'REDIRECT_URL' => '/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519153649.079
+    'REQUEST_TIME' => 1519153649
+]
+2018-02-20 19:07:30 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:07:30 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53908'
+    'REDIRECT_URL' => '/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519153650.473
+    'REQUEST_TIME' => 1519153650
+]
+2018-02-20 19:08:05 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:08:05 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53910'
+    'REDIRECT_URL' => '/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519153685.431
+    'REQUEST_TIME' => 1519153685
+]
+2018-02-20 19:14:38 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:14:38 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53912'
+    'REDIRECT_URL' => '/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519154078.017
+    'REQUEST_TIME' => 1519154078
+]
+2018-02-20 19:14:38 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:14:38 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53912'
+    'REDIRECT_URL' => '/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519154078.815
+    'REQUEST_TIME' => 1519154078
+]
+2018-02-20 19:14:39 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:14:39 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53912'
+    'REDIRECT_URL' => '/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519154079.255
+    'REQUEST_TIME' => 1519154079
+]
+2018-02-20 19:14:39 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:14:39 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53912'
+    'REDIRECT_URL' => '/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519154079.582
+    'REQUEST_TIME' => 1519154079
+]
+2018-02-20 19:14:39 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:14:39 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53912'
+    'REDIRECT_URL' => '/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519154079.782
+    'REQUEST_TIME' => 1519154079
+]
+2018-02-20 19:14:40 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:14:40 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53912'
+    'REDIRECT_URL' => '/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519154080.343
+    'REQUEST_TIME' => 1519154080
+]
+2018-02-20 19:14:40 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:14:40 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53912'
+    'REDIRECT_URL' => '/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519154080.759
+    'REQUEST_TIME' => 1519154080
+]
+2018-02-20 19:15:55 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\controllers\UserForm' not found' in C:\web-devs\todo-list\controllers\SiteController.php:129
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-02-20 19:15:55 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53914'
+    'REDIRECT_URL' => '/site/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519154155.667
+    'REQUEST_TIME' => 1519154155
+]
+2018-02-20 19:21:31 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\controllers\UserForm' not found' in C:\web-devs\todo-list\controllers\SiteController.php:129
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-02-20 19:21:30 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53915'
+    'REDIRECT_URL' => '/site/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519154490.953
+    'REQUEST_TIME' => 1519154490
+]
+2018-02-20 19:21:31 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\controllers\UserForm' not found' in C:\web-devs\todo-list\controllers\SiteController.php:129
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-02-20 19:21:31 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53916'
+    'REDIRECT_URL' => '/site/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519154491.655
+    'REQUEST_TIME' => 1519154491
+]
+2018-02-20 19:23:02 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:23:02 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53922'
+    'REDIRECT_URL' => '/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519154582.819
+    'REQUEST_TIME' => 1519154582
+]
+2018-02-20 19:23:06 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "userform".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('userform', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:23:06 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53922'
+    'REDIRECT_URL' => '/userform'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/userform'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519154586.338
+    'REQUEST_TIME' => 1519154586
+]
+2018-02-20 19:23:11 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/userform' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('userform', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/userform', Array)
+#2 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:23:10 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53922'
+    'REDIRECT_URL' => '/site/userform'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/userform'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519154590.973
+    'REQUEST_TIME' => 1519154590
+]
+2018-02-20 19:23:18 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "userform".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('userform', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:23:18 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53924'
+    'REDIRECT_URL' => '/userform'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/userform'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519154598.856
+    'REQUEST_TIME' => 1519154598
+]
+2018-02-20 19:23:19 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user".' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-02-20 19:23:19 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53924'
+    'REDIRECT_URL' => '/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519154599.415
+    'REQUEST_TIME' => 1519154599
+]
+2018-02-20 19:32:06 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`yii-framework`.`posts`, CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`author_id`) REFERENCES `users` (`user_id`))' in C:\web-devs\todo-list\vendor\yiisoft\yii2\db\Command.php:994
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\db\Command.php(994): PDOStatement->execute()
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\db\Schema.php(412): yii\db\Command->execute()
+#2 C:\web-devs\todo-list\vendor\yiisoft\yii2\db\ActiveRecord.php(511): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 C:\web-devs\todo-list\vendor\yiisoft\yii2\db\ActiveRecord.php(477): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 C:\web-devs\todo-list\vendor\yiisoft\yii2\db\BaseActiveRecord.php(646): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 C:\web-devs\todo-list\controllers\PostsController.php(68): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\controllers\PostsController->actionCreate()
+#7 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`yii-framework`.`posts`, CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`author_id`) REFERENCES `users` (`user_id`))
+The SQL being executed was: INSERT INTO `posts` (`post_title`, `post_description`, `author_id`) VALUES ('1', '1', 1)' in C:\web-devs\todo-list\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\db\Command.php(1004): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `po...')
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\db\Schema.php(412): yii\db\Command->execute()
+#2 C:\web-devs\todo-list\vendor\yiisoft\yii2\db\ActiveRecord.php(511): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 C:\web-devs\todo-list\vendor\yiisoft\yii2\db\ActiveRecord.php(477): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 C:\web-devs\todo-list\vendor\yiisoft\yii2\db\BaseActiveRecord.php(646): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 C:\web-devs\todo-list\controllers\PostsController.php(68): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\controllers\PostsController->actionCreate()
+#7 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`yii-framework`.`posts`, CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`author_id`) REFERENCES `users` (`user_id`))
+)
+
+2018-02-20 19:32:06 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_POST = [
+    '_csrf' => 'b5Il_DleH0qphzh5FYqUIOIpyyMSShMj8N5VHx82o1JCpmK3XhdWOtPdVRx-86Z2hnmdVkU-RG-lqzlAQHHsGg=='
+    'Posts' => [
+        'post_title' => '1'
+        'post_description' => '1'
+        'author_id' => '1'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '175'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://app'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://app/posts/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53971'
+    'REDIRECT_URL' => '/posts/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/posts/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519155126.771
+    'REQUEST_TIME' => 1519155126
+]
+2018-02-20 19:34:31 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Posts::user_id' in C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 C:\web-devs\todo-list\vendor\yiisoft\yii2\db\BaseActiveRecord.php(288): yii\base\Component->__get('user_id')
+#1 C:\web-devs\todo-list\vendor\yiisoft\yii2\validators\ExistValidator.php(145): yii\db\BaseActiveRecord->__get('user_id')
+#2 C:\web-devs\todo-list\vendor\yiisoft\yii2\validators\ExistValidator.php(94): yii\validators\ExistValidator->prepareConditions(Array, Object(app\models\Posts), 'author_id')
+#3 C:\web-devs\todo-list\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\ExistValidator->validateAttribute(Object(app\models\Posts), 'author_id')
+#4 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\models\Posts), Array)
+#5 C:\web-devs\todo-list\vendor\yiisoft\yii2\db\ActiveRecord.php(471): yii\base\Model->validate(NULL)
+#6 C:\web-devs\todo-list\vendor\yiisoft\yii2\db\BaseActiveRecord.php(646): yii\db\ActiveRecord->insert(true, NULL)
+#7 C:\web-devs\todo-list\controllers\PostsController.php(68): yii\db\BaseActiveRecord->save()
+#8 [internal function]: app\controllers\PostsController->actionCreate()
+#9 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#12 C:\web-devs\todo-list\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('posts/create', Array)
+#13 C:\web-devs\todo-list\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\web-devs\todo-list\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2018-02-20 19:34:31 [127.0.0.1][-][e3ighcrafn5abs672mug9vh2v3][info][application] $_POST = [
+    '_csrf' => 'b5Il_DleH0qphzh5FYqUIOIpyyMSShMj8N5VHx82o1JCpmK3XhdWOtPdVRx-86Z2hnmdVkU-RG-lqzlAQHHsGg=='
+    'Posts' => [
+        'post_title' => '1'
+        'post_description' => '1'
+        'author_id' => '1'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'e3ighcrafn5abs672mug9vh2v3'
+    '_csrf' => 'b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-4GKgIIpzZmeky2VdPVuWtWLUul__GOH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rupudal'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'app'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '175'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://app'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://app/posts/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en'
+    'HTTP_COOKIE' => 'PHPSESSID=e3ighcrafn5abs672mug9vh2v3; _csrf=b4c7d16fbd2b0ce5202ec99243ae6ff9fe4f3471ad3d4fd5ff848c922db847e4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-4GKgIIpzZmeky2VdPVuWtWLUul__GOH%22%3B%7D'
+    'PATH' => 'C:\\Windows;C:\\Windows\\system32;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Git\\bin;C:\\Program Files\\Apache24\\bin;C:\\Program Files\\PHP56;C:\\Program Files\\MySQL57\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win64) PHP/5.6.33'
+    'SERVER_NAME' => 'app'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/web-devs/todo-list/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/web-devs/todo-list/web/index.php'
+    'REMOTE_PORT' => '53984'
+    'REDIRECT_URL' => '/posts/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/posts/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519155271.84
+    'REQUEST_TIME' => 1519155271
+]

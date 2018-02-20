@@ -10,3 +10,5 @@ To-Do List is the Application, based on Yii 2 Basic Project.
 
 **Now it has some Features:**
 - User-Friendly URLs.
+- Form Action "User".
+- CRUD Model "Posts".
